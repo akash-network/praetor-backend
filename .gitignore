@@ -1,0 +1,15 @@
+.idea/
+
+venv/
+
+__pycache__/
+*/__pycache__/
+
+.DS_Store
+*/.DS_Store
+
+.env
+bin/
+lib/
+Projects/
+pyvenv.cfg
