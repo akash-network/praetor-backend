@@ -1,0 +1,15 @@
+fastapi==0.75.2
+uvicorn[standard]==0.17.6
+pydantic==1.9.0
+pymongo==4.1.1
+dnspython==2.2.1
+fabric==2.6.0
+cloudpickle==2.0.0
+redis==4.3.1
+python-multipart==0.0.5
+requests==2.27.1
+boto3==1.22.11
+pylint==2.13.8
+pyjwt==2.3.0
+aenum==3.1.11
+APScheduler==3.9.1
