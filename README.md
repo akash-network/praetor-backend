@@ -47,11 +47,6 @@ REDIS_URI - URI for connecting to the Redis server.
 REDIS_PASSWORD - Password for Redis authentication, if required.
 REDIS_PORT - Port number on which the Redis server is running.
 
-# AWS Config
-AWS_DEFAULT_REGION - Default region for AWS services.
-AWS_ACCESS_KEY_ID - Access key ID for AWS SDK authentication.
-AWS_SECRET_ACCESS_KEY - Secret access key for AWS SDK authentication.
-
 # SSH Server Config
 PRAETOR_DIR - Directory path where Praetor-related files are stored.
 RSA_FILENAME - File name for RSA key.
@@ -71,30 +66,25 @@ CHAIN_ID_TESTNET - Chain ID of the Akash testnet.
 KEYRING_BACKEND - Backend for managing cryptographic keys in Akash.
 UPLOAD_DIR - Directory to store uploaded files.
 KUBE_DIR - Directory to store Kubernetes configurations.
-MASTER_SESSION_ID - Session ID for the main network operations.
-MASTER_SESSION_ID_TESTNET - Session ID for testnet operations.
+APP_SESSION_ID - Session ID for the app mainnet operations.
+APP_SESSION_ID_TESTNET - Session ID for the app testnet operations.
 AKASH_VERSION - Version of the Akash software.
 AKASH_VERSION_TESTNET - Version of the Akash software for testnet.
 ALLOWED_WALLET_ADDRESSES - List of wallet addresses allowed for certain operations.
 PROVIDER_SERVICES_VERSION - Version identifier for provider services.
 PROVIDER_SERVICES_VERSION_TESTNET - Version identifier for provider services on testnet.
 PROVIDER_PRICE_SCRIPT_URL - URL for the provider pricing script.
-PROVIDER_UPGRADE_ALLOWED_WALLET_ADDRESSES - Wallet addresses allowed to perform upgrades.
-
-# SES Config
-AUDIT_TO_EMAIL_ADDRESSES - Email addresses to send audit logs.
-AUDIT_FROM_EMAIL_ADDRESS - Email address used as the sender for audit logs.
 
 # Authentication
 PUBLIC_KEY - Public key used for authentication procedures.
 HOST_NAME - The hostname of the server where the application is running.
-KNIGHT_HOST - Hostname of the Knight service.
+SECURITY_HOST - Hostname of the security service.
 
 # Kubernetes
 GVISOR_BASE_URL - Base URL for GVisor integration.
 
-# Cloud-mos api Config
-CLOUD_MOS_API_URL - API URL for Cloud-MOS services.
+# Cloudmos api Config
+CLOUDMOS_API_URL - API URL for Cloudmos services.
 AVG_BLOCK_PER_MONTH - Average number of blocks per month, used for calculations.
 ```
 
