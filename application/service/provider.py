@@ -299,7 +299,7 @@ def refresh_provider_list(is_testnet=False):
 
         # Execute command to fetch provider list
         cmd_result = ssh_client.run(
-            f"~/bin/provider-services query provider list --node {node_status} --limit 800 -o json", hide=True
+            f"~/bin/provider-services query provider list --node {node_status} --limit 1000 -o json", hide=True
         )
 
         try:
