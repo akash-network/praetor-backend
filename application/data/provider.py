@@ -72,8 +72,10 @@ def update_many_provider(ssh_client, providers, chain_id):
                     log.info(f"Provider url is wrong - {provider['cluster_public_hostname']}")
 
             if (("cluster_public_hostname" in provider and
-                 provider["cluster_public_hostname"] not in Config.EXCLUDED_HOSTNAMES.split(",")) and
-                    (provider["owner"] not in Config.EXCLUDED_OWNERS.split(","))):
+                 provider["cluster_public_hostname"] in Config.EXCLUDED_HOSTNAMES.split(",")) or
+                    (provider["owner"] in Config.EXCLUDED_OWNERS.split(","))):
+                continue
+            else:
                 update_cluster_operations.append(UpdateOne({"owner": provider["owner"], "chainid": chain_id},
                                                            {"$set": provider}))
                 online_history = {
